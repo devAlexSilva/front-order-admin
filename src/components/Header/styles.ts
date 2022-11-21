@@ -3,12 +3,13 @@ import styled from 'styled-components'
 export const Header = styled.header`
   background-color: #d73035;
   display: flex;
+  justify-content: center;
   height: 198px;
 `
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 1290px;
+  max-width: 1200px;
   padding: 0 8px;
   display: flex;
   justify-content: space-between;
