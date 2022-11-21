@@ -14,8 +14,9 @@ export const Container = styled.div`
   padding: 16px;
   margin-bottom: 28px;
   border-radius: 16px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   header {
     padding: 8px;

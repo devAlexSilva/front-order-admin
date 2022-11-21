@@ -1,6 +1,7 @@
 import { Cards } from '../Cards'
 import * as S from './styles'
 
+
 export const Orders = () => {
   return (
     <>
@@ -11,26 +12,26 @@ export const Orders = () => {
             <strong>Fila de Espera</strong>
             <span>(1)</span>
           </header>
-          <Cards />
-          <Cards />
-          <Cards />
+          <Cards table='5' quantity={2}/>
+          <Cards table='3' quantity={4}/>
+          <Cards table='6' quantity={2}/>
         </section>
         <section className='kanban-production'>
           <header>
-            <span>⏳</span>
+            <span>👩‍🍳</span>
             <strong>Em Produção</strong>
             <span>(1)</span>
           </header>
-          <Cards />
-          <Cards />
+          <Cards table='2' quantity={1}/>
+          <Cards table='4' quantity={2}/>
         </section>
         <section className='kanban-ready'>
           <header>
-            <span>⏳</span>
+            <span>🍽️</span>
             <strong>Pronto</strong>
             <span>(1)</span>
           </header>
-          <Cards />
+          <Cards table='1' quantity={6}/>
         </section>
       </S.Container>
     </>
